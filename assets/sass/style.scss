@@ -1,0 +1,165 @@
+@import 'compass/reset';
+@import 'fonts' ;
+@import "../fontello/css/fontello.css";
+@import url(../fontello/css/fontello.css);
+
+@mixin fontello {
+  font-family: "fontello";
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+$co:  lighten(#005130, 10);
+$second-color: lighten(#005130, 10);
+$third-color: rgb(206, 0, 88);
+$main-font-color: rgb(44, 42, 41);
+$second-font-color: rgb(138, 140, 143);
+$box-shadow: 0 0 60px 6px #f8f8f8;//0 0 40px 24px rgb(248, 248, 248);
+$menu-box-shadow: 0 0 40px 10px #f8f8f8;
+
+html {
+  font-size: 62.5%; 
+}
+
+body {
+  width: 100%;
+  text-align:center;
+  font-size: 16px;
+}
+
+div.container {
+  font-family: "Adelle";
+  color:  $main-font-color;
+  max-width: 100%;
+  padding: 0;
+  overflow: hidden;
+  a {
+    padding: 0;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: $second-font-color;
+  }
+  h1 {
+    margin: 0;
+    padding: 20px 5px;
+    font-size: 2rem;
+    letter-spacing: .3px;
+    @media (min-width: 426px) {    
+      margin: 0 65px;
+      padding: 20px 0 48px;
+      font-size: 2.2rem;
+    }
+  } 
+  h2 { 
+    font-size: 2rem;
+    padding: 70px 0 30px;
+    color: $main-font-color;
+    letter-spacing: .5px;
+    @media (min-width: 426px) { 
+      padding: 50px 0;
+    }
+  }
+  h3 { 
+    font-size: 1.9rem; 
+    line-height: 2.5rem;
+    font-weight: 300;
+  }
+}
+
+p { 
+  font-size: 1.5rem;
+  color: $second-font-color;
+  font-weight: 100;
+}
+
+::-webkit-input-placeholder {
+  color: rgb(99, 102, 106);
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 100;
+}
+
+:-moz-placeholder {
+  color: rgb(99, 102, 106);
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 100;
+}
+
+::-moz-placeholder {
+  color: rgb(99, 102, 106);
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 100;
+}
+
+:-ms-input-placeholder {
+  color: rgb(99, 102, 106);
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 100;
+}
+
+::-ms-input-placeholder {
+  color: rgb(99, 102, 106);
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 100;
+}
+
+.wrapper {
+  margin: 0;
+  @media (min-width: 769px) {
+    margin: 0 100px;
+  }
+  @media (min-width: 1441px) {
+    margin: 0 390px;
+  }
+}
+button.btn {
+  position: relative;
+  height: 50px;
+  width: 172px;
+  padding-right: 18px;
+  font-size: 1.8rem;
+  font-weight: 100;
+  line-height: 2.2;
+  color: white;
+  background-color: #ce0058;
+  cursor: pointer;
+  transition: all .5s;
+  border: 1px solid $third-color;
+  &:after {
+    content:"";
+    position: absolute;
+    height: 15px; width: 15px;
+    border: 1px solid white;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: 16px;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+  &:hover {
+    background-color: white;
+    border: 1px solid #ce0058; 
+    color: $third-color;
+    &:after { 
+      border: 1px solid #ce0058; 
+      border-width: 2px 2px 0 0;
+    }
+  }
+
+}
+
+
+
+
+
+
+/*=================== navigation =======================*/
